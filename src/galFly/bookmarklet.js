@@ -10,7 +10,7 @@
 
 
 
-var imgs = Array.prototype.filter.call(document.links, function(val){
+var imgs = Array.prototype.slice.call(document.links).filter(function(val){
   return /\.(jpe?g|gif|png|tiff|webm|svg)(\?.*)?$/i.test(val.href);
 });
 
